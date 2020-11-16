@@ -12,7 +12,7 @@
 
 
 /* ==========================================================================
-  Base styles: opinionated defaults
+    Base styles: opinionated defaults
    ========================================================================== */
 
 html {
@@ -285,6 +285,16 @@ ul{
     color: white;
 }
 
+.fs-md {
+    font-size: 1.2rem;
+}
+
+.hrOrangered {
+    width: 60%;
+    background-color: orangered;
+    height: .3rem;
+}
+
 
 /*HEADER+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
@@ -324,6 +334,16 @@ ul{
 .redes-sociales a:hover {
     color: orangered;
     text-shadow: 1px 1px 3px azure;
+}
+
+.login {
+    float: right;
+}
+
+.login-button {
+    width: 9rem;
+    height: 2.5rem;
+    font-weight: bold;
 }
 
 .informacion-evento {
@@ -448,6 +468,7 @@ h1.nombre-sitio {
 .navegacion-principal a:hover {
     background-color: orangered;
     border: .2rem solid orangered;
+    color: white;
 }
 
 .navegacion-principal a:hover:last-child {
@@ -811,8 +832,8 @@ h1.nombre-sitio {
 
 /*CONTENEDOR MAPA+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .mapa{
-    height: 42rem;
-    background-color: green;
+    height: 40rem;
+    width: 100%;
 }
 
 /*TESTIMONIALES++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -920,27 +941,7 @@ blockquote p::before{
     font-family: 'PT Sans', sans-serif;
 }
 
-/*CUENTA REGRESIVA++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
-
-.cuenta-regresiva ul li{
-    text-transform: uppercase;
-    font-family: 'Oswald' sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    width: 50%;
-    float: left;
-}
-
-.cuenta-regresiva ul p{
-    font-weight: bold;
-}
-
-@media (min-width: 768px){
-    .cuenta-regresiva ul li{
-        width: 25%;
-        float: left;
-    }
-}
+/*CERTIFIACIONES++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 /*FOOTER++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
@@ -1181,4 +1182,33 @@ blockquote p::before{
     h3 {
         page-break-after: avoid;
     }
+}
+
+/*########################################################################################################################################################*/
+/* Bootstrap edit */
+
+.btn-outline-danger {
+    color: white !important;
+    border-color: white !important;
+}
+
+.btn-outline-danger:hover {
+    background-color: orangered !important;
+    color: white !important;
+}
+
+.navbar {
+    height: 6.7rem;
+}
+
+.navLink {
+    font-size: 1.7rem;
+}
+
+.bg-dark {
+    background-color: #353535 !important;
+}
+
+.navbar-dark {
+    background-color: #353535 !important;
 }
